@@ -43,7 +43,10 @@ public class CreateEngineersTrial {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.EMPTY_SUPER_GLUE);
             event.accept(ModItems.EMPTY_ELECTRON_TUBE);
+
             event.accept(ModItems.GREEN_ELECTRON_TUBE);
+
+            event.accept(ModItems.BLUE_ELECTRON_TUBE);
             event.accept(ModItems.BROWN_PAPER);
             event.accept(ModItems.IRON_SCREW);
             event.accept(ModItems.DESTROYED_PRECISION_MECHANISM);
