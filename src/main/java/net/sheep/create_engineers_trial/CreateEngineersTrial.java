@@ -44,6 +44,7 @@ public class CreateEngineersTrial {
             event.accept(ModItems.EMPTY_SUPER_GLUE);
 
             event.accept(ModItems.EMPTY_ELECTRON_TUBE);
+            event.accept(ModItems.GREEN_ELECTRON_TUBE);
         }
     }
 
