@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "create_engineers_trial:block/rubber_sapling"
+    },
+    "stage=1": {
+      "model": "create_engineers_trial:block/rubber_sapling"
+    }
+  }
+}

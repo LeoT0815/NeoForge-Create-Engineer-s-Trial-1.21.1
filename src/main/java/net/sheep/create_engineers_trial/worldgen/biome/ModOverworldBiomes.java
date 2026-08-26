@@ -33,17 +33,14 @@ public class ModOverworldBiomes {
             HolderGetter<ConfiguredWorldCarver<?>> carverGetter
     ) {
 
-        // Keine Mobs
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
-        // Biome Features
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(
                         placedFeatureGetter,
                         carverGetter
                 );
 
-        // Höhlen und normale Untergrund-Features
         BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeBuilder);
         BiomeDefaultFeatures.addDefaultCrystalFormations(biomeBuilder);
         BiomeDefaultFeatures.addDefaultMonsterRoom(biomeBuilder);
@@ -51,10 +48,8 @@ public class ModOverworldBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
 
-        // Savannen-ähnliches Gras
         BiomeDefaultFeatures.addSavannaGrass(biomeBuilder);
 
-        // Zuckerrohr
         addFeature(
                 biomeBuilder,
                 GenerationStep.Decoration.VEGETAL_DECORATION,

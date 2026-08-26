@@ -73,6 +73,9 @@ public class ModItems {
     public static final DeferredItem<Item>  INCOMPLETE_WRENCH =
             ITEMS.register("incomplete_wrench",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  CEMENT_BALL =
+            ITEMS.register("cement_ball",
+                    () -> new Item(new Item.Properties()));
 
 
 

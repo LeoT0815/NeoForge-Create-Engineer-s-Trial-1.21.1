@@ -1,0 +1,46 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:nether_brick"
+  },
+  "loops": 7,
+  "results": [
+    {
+      "id": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ],
+  "sequence": [
+        {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_upgrade_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_upgrade_template"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_upgrade_template"
+        },
+        {
+          "item": "minecraft:diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_upgrade_template"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_engineers_trial:incomplete_upgrade_template"
+  }
+}

@@ -20,6 +20,8 @@
   "item.create_engineers_trial.sticky_shaft": "Sticky Shaft",
   "item.create_engineers_trial.raw_andesite_alloy": "Raw Andesite Alloy",
   "item.create_engineers_trial.incomplete_wrench": "Incomplete Wrench",
+  "item.create_engineers_trial.cement_ball": "Cement Ball",
+
   "block.create_engineers_trial.rubber_window_pane": "Rubber Window Pane",
   "block.create_engineers_trial.rubber_planks": "Rubber Planks",
   "block.create_engineers_trial.rubber_wood": "Rubber Wood",
@@ -34,6 +36,8 @@
   "block.create_engineers_trial.rubber_trapdoor": "Rubber Trapdoor",
   "block.create_engineers_trial.rubber_button": "Rubber Button",
   "block.create_engineers_trial.rubber_pressure_plate": "Rubber Pressure Plate",
+  "block.create_engineers_trial.rubber_leaves": "Rubber Leaves",
+  "block.create_engineers_trial.rubber_sapling": "Rubber Sapling",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "create_engineers_trial:block/rubber_slab"
+    },
+    "type=double": {
+      "model": "create_engineers_trial:block/rubber_planks"
+    },
+    "type=top": {
+      "model": "create_engineers_trial:block/rubber_slab_top"
+    }
+  }
+}
