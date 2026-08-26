@@ -10,6 +10,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sheep.create_engineers_trial.CreateEngineersTrial;
 import net.sheep.create_engineers_trial.item.ModItems;
 import net.sheep.create_engineers_trial.worldgen.tree.ModWoodTypes;
+import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.Blocks;
+import net.sheep.create_engineers_trial.worldgen.tree.ModTreeGrowers;
 
 import java.util.function.Supplier;
 
@@ -33,8 +36,7 @@ public class ModBlocks {
             () -> new IronBarsBlock(BlockBehaviour.Properties.of()
                     .strength(3f).sound(SoundType.GLASS).noOcclusion()));
 
-    // Wood Variants
-    public static final DeferredBlock<Block> RUBBER_STAIRS = registerBlock("rubber_stairs",
+     public static final DeferredBlock<Block> RUBBER_STAIRS = registerBlock("rubber_stairs",
             () -> new StairBlock(RUBBER_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(RUBBER_PLANKS.get())));
     public static final DeferredBlock<Block> RUBBER_SLAB = registerBlock("rubber_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(RUBBER_PLANKS.get())));
@@ -50,6 +52,10 @@ public class ModBlocks {
             () -> new ButtonBlock(ModWoodTypes.RUBBER_SET_TYPE, 30, BlockBehaviour.Properties.ofFullCopy(RUBBER_PLANKS.get())));
     public static final DeferredBlock<Block> RUBBER_PRESSURE_PLATE = registerBlock("rubber_pressure_plate",
             () -> new PressurePlateBlock(ModWoodTypes.RUBBER_SET_TYPE, BlockBehaviour.Properties.ofFullCopy(RUBBER_PLANKS.get())));
+    public static final DeferredBlock<Block> RUBBER_LEAVES = registerBlock("rubber_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> RUBBER_SAPLING = registerBlock("rubber_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.RUBBER_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

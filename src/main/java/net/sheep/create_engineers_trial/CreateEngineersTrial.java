@@ -1,6 +1,7 @@
 package net.sheep.create_engineers_trial;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -48,6 +49,10 @@ public class CreateEngineersTrial {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ModBiomes.registerBiomes();
+
+            // Register leaves and saplings to the composter table
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.RUBBER_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.RUBBER_SAPLING.get().asItem(), 0.3F);
         });
     }
 
