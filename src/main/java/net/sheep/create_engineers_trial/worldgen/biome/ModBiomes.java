@@ -12,7 +12,7 @@ public class ModBiomes {
     public static final ResourceKey<Biome> RUBBER_FOREST = registerBiomeKey("rubber_forest");
 
     public static void registerBiomes() {
-        //Regions.register(new RubberForestRegion());
+        Regions.register(new RubberForestRegion());
     }
 
     public static void bootstrap(BootstrapContext<Biome> context) {
